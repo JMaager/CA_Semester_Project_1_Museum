@@ -1,13 +1,10 @@
-main {
-  display: flex;
-  justify-content: center;
-}
 .home-content {
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   max-width: 1600px;
+  margin: 0 auto;
 }
 .home-content-grid {
   display: flex;
