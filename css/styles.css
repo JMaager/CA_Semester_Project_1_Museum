@@ -160,9 +160,11 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  padding-right: 0;
 }
 .footer-container-right {
   padding: 1rem;
+  padding-left: 0;
 }
 
 /*General content*/
@@ -271,5 +273,11 @@ footer a:hover {
     width: 350px;
     height: 100%;
     font-size: 24px;
+  }
+  .footer-container-right img {
+    width: 32px;
+  }
+  .footer-container-left img {
+    width: 250px;
   }
 }
