@@ -238,7 +238,7 @@ footer a:hover {
     gap: 1rem;
   }
   .line-short {
-    width: 450px;
+    width: 375px;
     border: 1px solid #b1b1b1;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -266,5 +266,10 @@ footer a:hover {
     font-size: 17px;
     padding-right: 1rem;
     padding-left: 1rem;
+  }
+  .content-block p {
+    width: 350px;
+    height: 100%;
+    font-size: 24px;
   }
 }
