@@ -12,6 +12,7 @@
 body {
   font-family: "Joan", Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
+  background-color: rgb(255, 255, 255);
 }
 main {
   margin: 8px;
@@ -27,6 +28,7 @@ h2,
 }
 h1 {
   font-size: 64px;
+  text-align: center;
 }
 a,
 li {
@@ -38,13 +40,6 @@ li {
 /*Break lines*/
 .line-short {
   width: 900px;
-  border: 1px solid #b1b1b1;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  align-self: center;
-}
-.line-long {
-  width: 1200px;
   border: 1px solid #b1b1b1;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -184,17 +179,16 @@ footer a:hover {
 .content-block-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  gap: 2rem;
+  justify-content: center;
+  gap: 5rem;
 }
 .content-block-title {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .content-block p {
   width: 400px;
-
-  border: 3px solid black;
   height: 100%;
   font-size: 24px;
 }
@@ -236,6 +230,27 @@ footer a:hover {
   .footer-container-left img {
     width: 300px;
   }
+  .content-block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .line-short {
+    width: 450px;
+    border: 1px solid #b1b1b1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-self: center;
+  }
+  .line-long {
+    width: 100%;
+    border: 1px solid #b1b1b1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-self: center;
+  }
 }
 @media (max-width: 600px) {
   .nav-lower-container li {
@@ -243,5 +258,13 @@ footer a:hover {
   }
   .nav-upper-container li {
     font-size: 12px;
+  }
+  .nav-logo img {
+    width: 350px;
+  }
+  .nav-lower-container li {
+    font-size: 17px;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
