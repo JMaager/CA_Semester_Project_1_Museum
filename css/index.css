@@ -70,4 +70,7 @@
   .home-content-blocks h2 {
     font-size: 24px;
   }
+  .text h1 {
+    margin: 1.5rem;
+  }
 }

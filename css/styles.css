@@ -133,6 +133,9 @@ li {
 
 /*H1 styling*/
 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
@@ -166,6 +169,12 @@ footer a:hover {
   padding: 1rem;
   padding-left: 0;
 }
+.footer-container-left img {
+  width: 400px;
+}
+.footer-container-right img {
+  width: 64px;
+}
 
 /*General content*/
 .content {
@@ -177,22 +186,78 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  padding: 2rem;
+}
+.content-block img {
+  border: 1px solid black;
 }
 .content-block-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 5rem;
+  background-color: rgba(111, 168, 121, 0.85);
+  margin: 0 auto;
+}
+.content-block-content li {
+  font-size: 24px;
+  border: 1px solid grey;
+  width: 100%;
+  margin: 0 auto;
+}
+.content-block-content ul {
+  width: 100%;
+  padding: 0;
+  border: 1px solid black;
+  height: 100%;
+  align-self: center;
+}
+.text p {
+  text-align: center;
+  font-size: 20px;
+  width: 600px;
+  align-self: center;
+}
+.text li {
+  text-align: left;
+}
+.text ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 350px;
+}
+.newsletter-box {
+  display: block;
+  flex-direction: row;
+  align-self: center;
+}
+.newsletter-box [type="submit"] {
+  color: white;
+  -webkit-text-stroke: 0.5px white;
+}
+.newsletter-box [type="submit"]:hover {
+  cursor: pointer;
 }
 .content-block-title {
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 .content-block p {
   width: 400px;
   height: 100%;
   font-size: 24px;
+}
+.content-block-text {
+  text-align: left;
+  align-self: center;
+  background-color: rgba(111, 168, 121, 0.85);
+}
+.ysc-cta:hover {
+  text-decoration: underline;
 }
 
 /*Mobile scaling*/
@@ -239,6 +304,9 @@ footer a:hover {
     align-items: center;
     gap: 1rem;
   }
+  .content-block-text {
+    text-align: left;
+  }
   .line-short {
     width: 375px;
     border: 1px solid #b1b1b1;
@@ -252,6 +320,15 @@ footer a:hover {
     margin-top: 2rem;
     margin-bottom: 2rem;
     align-self: center;
+  }
+  .content-block-content img {
+    width: 350px;
+  }
+  .text p {
+    width: 350px;
+  }
+  .text h1 {
+    margin: 0 auto;
   }
 }
 @media (max-width: 600px) {
